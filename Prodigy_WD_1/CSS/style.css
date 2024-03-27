@@ -90,13 +90,13 @@ html{
 }
 
 #Home h1{
-    color: navy;
+    color: white;
     text-align: center;
     font-family: "Esteban", serif;
 }
 
 #Home p{
-    color: navy;
+    color: white;
     text-align: center;
     font-size: 1.4rem;
     font-family: "Esteban", serif;
