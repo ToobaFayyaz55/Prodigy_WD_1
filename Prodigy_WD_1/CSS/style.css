@@ -79,7 +79,7 @@ html{
 
 #Home::before{
     content: "";
-    background: url(/IMAGES/background.png) no-repeat center center/cover;
+    background: url(/Prodigy_WD_1/IMAGES/background.png) no-repeat center center/cover;
     position: absolute;
     top: 0px;
     left: 0px;
@@ -132,7 +132,7 @@ html{
 #Client-Section::before{
     content: "";
     position: absolute;
-    background: url('/IMAGES/lights.jpg') no-repeat center center/cover;
+    background: url('/Prodigy_WD_1/IMAGES/lights.jpg') no-repeat center center/cover;
     width: 100%;
     height: 400px;
     opacity: 0.3;
@@ -166,7 +166,7 @@ html{
     height: 100%;
     z-index: -1;
     opacity: 0.7;
-    background: url(/IMAGES/accessory.jpg) no-repeat center center/cover;
+    background: url(/Prodigy_WD_1/IMAGES/accessory.jpg) no-repeat center center/cover;
 }
 
 #contact-box{
