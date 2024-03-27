@@ -1,0 +1,228 @@
+/* CSS Reset */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* CSS variables */
+:root{
+    --navbar-height: 59px;
+}
+
+/* Navigation Bar */
+#navbar{
+    display: flex;
+    align-items: center; 
+    position: sticky;
+    top: 0px;   
+}
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+/* Navigation Bar: Logo and Image */
+#logo{
+    margin: 10px 20px;
+}
+
+#logo img{
+    height: 50px;
+    margin: 5px 5px;
+}
+
+/* Navigation Bar: List Styling */
+#navbar ul{
+    display: flex;
+    font-family: "Esteban", serif;
+}
+
+#navbar ul li{
+    list-style: none;
+    font-size: 1.2rem;
+}
+
+#navbar ul li a{
+    display: block;
+    padding: 2px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    color: white;
+}
+
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+
+/* Home section */
+#Home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 520px;
+    justify-content: center;
+    align-items: center;
+}
+
+#Home::before{
+    content: "";
+    background: url(/IMAGES/background.png) no-repeat center center/cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 590px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.9;
+}
+
+#Home h1{
+    color: navy;
+    text-align: center;
+    font-family: "Esteban", serif;
+}
+
+#Home p{
+    color: navy;
+    text-align: center;
+    font-size: 1.4rem;
+    font-family: "Esteban", serif;
+}
+
+/* Services section */
+#services{
+    margin: 34px;
+    display: flex; 
+}
+#services .box{
+    border: 2px solid brown;
+    padding: 20px;
+    margin: 7px 20px;
+    border-radius: 22px;
+    background-color: rgb(247, 241, 229);
+}
+#services .box img{
+    height: 140px;
+    margin: auto;
+    display: block;
+}
+
+#services .box p{
+    font-family: "Esteban", serif;
+}
+
+/* Client Section */
+#Client-Section{
+    position: relative;
+}
+
+#Client-Section::before{
+    content: "";
+    position: absolute;
+    background: url('/IMAGES/lights.jpg') no-repeat center center/cover;
+    width: 100%;
+    height: 400px;
+    opacity: 0.3;
+    z-index: -1;
+}
+
+#Clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.client-item{
+    padding: 25px;
+}
+
+#Clients img{
+    height: 120px;
+}
+
+/* contact section */
+#Contact{
+    position: relative;
+}
+
+#Contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    background: url(/IMAGES/accessory.jpg) no-repeat center center/cover;
+}
+
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 5px;
+    font-size: 1.1rem;
+}
+
+#contact-box form{
+    width: 40%;
+}
+#contact-box label{
+    font-size: 1.3rem;
+    font-family: "Esteban", serif;
+}
+
+footer{
+    background: black;
+    color: white;
+    padding: 9px 20px;
+}
+
+/* utility classes */
+.h-primary{
+    font-size: 3.2rem;
+    padding: 12px;
+    font-family: "Esteban", serif;
+}
+
+.h-secondary{
+    font-size: 2.5rem;
+    padding: 12px;
+    font-family: "Esteban", serif;
+}
+
+.btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    border-radius: 12px;
+    background-color: green;
+    color: white;
+    margin: 17px;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.center{
+    text-align: center;
+}
+

@@ -1,0 +1,11 @@
+{
+	"folders": [
+		{
+			"name": "Home Decor Website",
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "home decor website"
+	}
+}

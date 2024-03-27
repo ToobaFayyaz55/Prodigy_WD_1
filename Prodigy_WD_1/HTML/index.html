@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Best Home Decors | DecorVista.com</title>
+    <link rel="stylesheet" href="/CSS/style.css">
+    <link rel="stylesheet" media="screen and (max-width: 1170px)" href="/CSS/phone.css">
+    <link href="https://fonts.googleapis.com/css2?family=Esteban&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <img src="/IMAGES/logo.png" alt="DecorVista.com" >
+        </div>
+
+        <ul>
+            <li class="items"><a href="#Home" >Home</a></li>
+            <li class="items"><a href="#Services-container" >Services</a></li>
+            <li class="items"><a href="#Client-Section" >Our Clients</a></li>
+            <li class="items"><a href="#Contact" >Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <section id="Home">
+        <h1 class="h-primary">Welcome to DecorVista</h1>
+        <p>Elevate your space with exquisite decor. Explore, discover, and transform your home today!</p>
+        <p>Find inspiration in every detail. Shop our curated collection for timeless elegance.</p>
+        <button class="btn">Order Now</button>
+    </section>
+
+    <section id="Services-container">
+        <h1 class="h-primary center">Our Services</h1>
+        <div id="services">
+            <div class="box">
+                <img src="/IMAGES/living.jpg" alt="Our Services">
+                <h2 class="h-secondary center">Custom Furniture</h2>
+                <p class="center">"Crafting bespoke furniture tailored to your style and needs. Elevate your space with personalized elegance."</p>
+            </div>
+            <div class="box">
+                <img src="/IMAGES/kitchen.jpg" alt="">
+                <h2 class="h-secondary center">Space Planning</h2>
+                <p class="center">"Maximize your space effortlessly. Tailored layouts for seamless functionality and aesthetic appeal."</p>
+            </div>
+            <div class="box">
+                <img src="/IMAGES/sesonal.png" alt="">
+                <h2 class="h-secondary center">Seasonal Decor</h2>
+                <p class="center">"Transform your home with seasonal decor that captures the essence of each moment, adding warmth and charm throughout the year."</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="Client-Section">
+        <h1 class="h-primary center">Our Clients</h1>
+        <div id="Clients">
+            <div class="client-item">
+                <img src="/IMAGES/C1.png" alt="Our Clients">
+            </div>
+            <div class="client-item">
+                <img src="/IMAGES/C2.png" alt="Our Clients">
+            </div>
+            <div class="client-item">
+                <img src="/IMAGES/C3.png" alt="Our Clients">
+            </div>
+            <div class="client-item">
+                <img src="/IMAGES/C4.png" alt="Our Clients">
+            </div>
+            <div class="client-item">
+                <img src="/IMAGES/C5.png" alt="Our Clients">
+            </div>
+        </div>
+    </section>
+
+    <section id="Contact">
+        <h1 class="h-primary center">Contact Us</h1>
+        <div id="contact-box">
+            <form action="">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" name="name" id="name" placeholder="Enter your name">
+                </div>
+                <div class="form-group">
+                    <label for="name">Phone No.:</label>
+                    <input type="phone" name="name" id="phone" placeholder="Enter your phone no.">
+                </div>
+                <div class="form-group">
+                    <label for="name">Email:</label>
+                    <input type="email" name="name" id="email" placeholder="Enter your email">
+                </div>
+                <div class="form-group">
+                    <label for="name">Message:</label>
+                    <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                </div>
+            <button type="submit" class="btn">Submit</button>
+            </form> 
+        </div>
+    </section>
+
+    <footer>
+        <div class="center">
+            Copyright &copy; www.DecorVista.com. All rights reserved!
+        </div>
+    </footer>
+    <script>
+        // Smooth scrolling for anchor links in the navbar
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Form validation
+        const form = document.querySelector('form');
+
+        form.addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            const name = document.getElementById('name').value;
+            const phone = document.getElementById('phone').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+
+            if (!name || !phone || !email || !message) {
+                alert('Please fill in all fields');
+                return;
+            }
+
+            // Additional validation logic (e.g., email format validation)
+
+            // Form submission code (e.g., sending data to a server)
+            console.log('Form submitted successfully');
+            form.reset(); // Reset the form after submission
+        });
+
+        // Add hover effect to client images
+        const clientImages = document.querySelectorAll('.client-item img');
+
+        clientImages.forEach(image => {
+            image.addEventListener('mouseenter', function() {
+                // Add a hover effect (e.g., increase image size)
+                this.style.transform = 'scale(1.1)';
+            });
+
+            image.addEventListener('mouseleave', function() {
+                // Remove the hover effect
+                this.style.transform = 'scale(1)';
+            });
+        });
+    </script>
+</body>
+</html>
